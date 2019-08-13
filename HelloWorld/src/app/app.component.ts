@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'HelloWorld';
+  item: string;
+  list: string[];
+
+  constructor() {
+    this.list = [];
+  }
+
+  add() {
+    this.list.push(this.item);
+  }
 }

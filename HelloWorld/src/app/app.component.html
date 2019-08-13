@@ -1,6 +1,6 @@
 <div class="container">
-  <div class="jumbotron" [hidden]="!title">
-    <h1>Hello {{ title }}!</h1>
-  </div>
-  <input type="text" [(ngModel)]="title" />
+  <h1>Hello world shop</h1>
+  <pre>{{ list | json }}</pre>
+  <input type="text" [(ngModel)]="item" />
+  <button (click)="add()">Add</button>
 </div>
