@@ -1,11 +1,5 @@
 <div class="container">
   <h1>Hello world shop</h1>
-  <div>
-    <div *ngFor="let item of list">{{ item }}</div>
-  </div>
-  <div *ngIf="list.length === 0">
-    The list is empty
-  </div>
-  <input type="text" [(ngModel)]="item" />
-  <button (click)="add()">Add</button>
+  <app-list [list]="list"></app-list>
+  <app-input (addItem)="addItem($event)"></app-input>
 </div>
